@@ -13,7 +13,7 @@ Get the most recent 10 transactions
 ```sh
 curl https://api.unchained.fyi/v1/near/rpc -X POST \
   -H "Content-Type: application/json" \
-  -d '{"query":"select * from transactions order by TODO limit 10"}'
+  -d '{"query": "select * from transactions order by TODO limit 10"}'
 ```
 
 #### Python
