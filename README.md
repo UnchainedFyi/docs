@@ -53,6 +53,7 @@ curl --header "x-api-key: <your_key>" https://api.unchained.fyi/near/rpc/v1 \
 Explode nested values in `receipts.actions`:
 ```sh
 curl --header "x-api-key: <your_key>" https://api.unchained.fyi/near/rpc/v1 \
+  -X POST \
   -d '{"query":"select actions[1].transfer.deposit as deposit, actions[1].functionCall.method_name as method_name, actions[1].functionCall.gas as gas from unchained.receipts limit 3"}'
 ```
 
